@@ -56,6 +56,7 @@ public with sharing class BatchApexRecipes implements Database.Batchable<SObject
         // Batch Processing
         for (Account acct : scope) {
             acct.Name += ' Edited by Batch class';
+           // acct.Name = acct.Name + ' Edited by Batch class';
 
             /**
              * This is an example of a circuit breaker pattern. It's not
